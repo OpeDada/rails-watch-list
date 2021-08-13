@@ -2,11 +2,14 @@
   <h1>Movies List 🍿</h1>
 </div>
 <% @lists.each do |list| %>
-  <p><%= link_to 'All list', list_path(list) %></p>
-    <% end %>
-    <%= link_to "Create a new list", new_list_path %>
+  <p><%= link_to list.name, list_path(list) %></p>
+  <% if list.photo.attached? %>
+    <%= cl_image_tag list.photo.key, height: 300, width: 400, crop: :fill %>
+  <% end %>
+<% end %>
+<%= link_to "Create a new list", new_list_path %>
 </div>
-  <div class="container width='100px'">
+<div class="container width='100px'">
   <div class="row justify-content-center">
   </div>
 </div>

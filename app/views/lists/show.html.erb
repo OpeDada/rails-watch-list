@@ -1,6 +1,9 @@
 <div class="list-card-container mt-2">
   <h2><%= @list.name %></h2>
   <hr>
+  <% if @list.photo.attached? %>
+    <%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
+  <% end %>
   <div class="list-card">
     <% @list.bookmarks.each do |bookmark| %>
       <%= image_tag bookmark.movie.poster_url, width: '150x300' %>
