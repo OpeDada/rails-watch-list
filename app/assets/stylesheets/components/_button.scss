@@ -14,7 +14,10 @@
 }
 
  .buttons {
-    display:flex;
-    justify-content: space-between;
-  margin: 2px;
+  display:flex;
+  justify-content: space-between;
+  margin: 6px;
+  position:sticky;
+  top: 1px;
+  z-index: 9;
   }
