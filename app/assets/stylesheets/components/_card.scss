@@ -3,6 +3,15 @@
     padding: 16px;
 
 }
+
+.list-card-container {
+   color: white;
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: 1fr 1fr;
+}
+
+
 .list-card {
     background-size: cover;
     background-position: 50% 60%;
@@ -14,4 +23,103 @@
     align-items: flex-end;
     width: 30rem;
     height: 10rem;
+}
+
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: 10px;
+}
+
+  a {
+    color: white;
+    text-decoration: none;
+  &:hover {
+    color:yellowgreen
+  }
+
+
+
+}
+
+.card-container {
+  color: white;
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: 1fr 1fr 1fr;
+
+
+}
+
+h2 {
+    color: whitesmoke;
+  }
+
+  .main-list-card {
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: 10px;
+
+
+  }
+
+  .card-category-two {
+    height: 600px;
+  display: flex;
+     background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  }
+
+
+
+  .list-cards {
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.list-cards image {
+  height: 50%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.list-cards h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  color:yellowgreen
+}
+
+.list-cards p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+  color:yellowgreen
+}
+
+.list-cards .card-bookmark-infos {
+  padding: 16px;
 }
