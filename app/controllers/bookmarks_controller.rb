@@ -1,5 +1,5 @@
 class BookmarksController < ApplicationController
-  before_action :set_params, only: [:new, :create, ]
+  before_action :set_params, only: [:new, :create]
 
   def new
     @bookmark = Bookmark.new
